@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-white antialiased;
+  }
+}
+
+.bold-heading {
+  @apply font-black uppercase tracking-tighter italic;
+}
+
+.card-dark {
+  @apply bg-slate-900 border border-slate-800 rounded-3xl p-8 hover:bg-slate-800/50 transition-all;
+}
